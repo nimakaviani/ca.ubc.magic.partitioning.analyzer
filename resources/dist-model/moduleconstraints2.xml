@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<constraints>
+    <entity>
+        <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-web-core</component>
+        <class>CoreActivator</class>
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-web-core</component>
+        <class>SpringHttpWrapper</class>
+        <method>a</method>        
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-web-core</component>
+        <class>DynamicConfigurationListener</class>   
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>com.notehive.osgi.hibernate-samples.hibernate-session</component>
+        <class>BundleTracker</class>
+        <method>stop</method>        
+        <exposes>method</exposes>
+    </entity>
+    <entity>
+        <component>com.notehive.osgi.hibernate-samples.hibernate-session</component>
+        <class>HbmParser</class>
+        <method>call</method>        
+        <exposes>method</exposes>
+    </entity>
+</constraints>

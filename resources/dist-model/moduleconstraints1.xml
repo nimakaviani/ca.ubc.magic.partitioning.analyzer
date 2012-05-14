@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<constraints>
+    <entity>
+        <component>AriesTrader :: Modules - Entities</component>
+        <class>QuoteDataBeanImpl</class>
+        <method></method>        
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>AriesTrader :: Modules - Entities</component>
+        <class>OrderDataBeanImpl</class>
+        <method></method>        
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>AriesTrader :: Modules - Entities</component>
+        <class>HoldingDataBeanImpl</class>
+        <method></method>        
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>AriesTrader :: Modules - Entities</component>
+        <class>AccountDataBeanImpl</class>
+        <method></method>        
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>AriesTrader :: Modules - Entities</component>
+        <class>AccountProfileDataBeanImpl</class>
+        <method></method>        
+        <exposes>class</exposes>
+    </entity>
+</constraints>

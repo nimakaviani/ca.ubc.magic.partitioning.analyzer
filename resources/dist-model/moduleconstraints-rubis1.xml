@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<constraints>
+    <!-- The following is the root node for where the dependency graph should start from --> 
+    <root>
+        <entity>
+            <component>org.ops4j.pax.web.service</component>
+            <class/><method/>
+            <target>component</target>
+        </entity>       
+    </root>
+
+    <!-- The following are exposers for methods and classes from within bundles -->
+    <expose/>
+
+    <!-- Ignore list begins here -->
+    <ignore>
+        <entity>
+            <component>org.ops4j.pax.+</component>
+            <class/><method/>       
+            <target>component</target>            
+        </entity>
+        <entity>
+            <component>com.notehive.osgi.hibernate-samples.hibernate-classes</component>
+            <class/><method/>        
+            <target>component</target>
+        </entity>         
+    </ignore>
+
+    <!-- list of replicable modules begins here -->
+    <replicable/>
+
+    <!-- list of non-replicable modules begins here -->
+    <non-replicable>
+        <entity>
+            <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-item-session</component>
+            <class/><method/>        
+            <target>component</target>
+        </entity>
+        <entity>
+            <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-bid-session</component>
+            <class/><method/>        
+            <target>component</target>
+        </entity>
+        <entity>
+            <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-buy-session</component>
+            <class/><method/>     
+            <target>component</target>
+        </entity>
+        <entity>
+            <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-user-session</component>
+           <class/><method/>        
+            <target>component</target>
+        </entity>
+        <entity>
+            <component>com.notehive.osgi.rubis.hibernate-osgi-rubis-comment-session</component>
+            <class/><method/>       
+            <target>component</target>
+        </entity>      
+    </non-replicable>
+</constraints>

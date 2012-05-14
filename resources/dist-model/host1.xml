@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<capabilities>
+	<hosts host-num="2">
+		<host id="1" default="true">
+			<cpu scale="GHz">1.7</cpu>
+			<memory scale="GB">4</memory>
+		</host>
+		<host id="2">
+			<cpu scale="GHz">2.1</cpu>
+			<memory scale="GB">2</memory>
+		</host>
+	</hosts>
+	
+	<exchange-rates>
+		<exchange-rate from-host="1" to-host="2" latency-ms="25" scale="MB">100</exchange-rate>
+		<exchange-rate from-host="2" to-host="1" latency-ms="25" scale="MB">100</exchange-rate>
+	</exchange-rates>
+</capabilities>

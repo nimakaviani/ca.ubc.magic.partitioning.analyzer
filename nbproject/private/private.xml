@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/simulator/view/DistSimulatorApp.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/simulator/view/DistSimulatorView.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/parser/JipViewer.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/IModuleCoarsener.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/BundleModuleCoarsener.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/ClassModuleCoarsener.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/simulator/control/TimeSimulator.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/parser/DistParser.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/parser/DistHandler.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/Module.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/report/ReportModel.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/report/UnitModel.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/Host.java</file>
+        <file>file:/home/nima/NetBeansProjects/DistributionSimulator/src/ca/ubc/magic/profiler/dist/model/ExchangeRate.java</file>
+    </open-files>
+</project-private>

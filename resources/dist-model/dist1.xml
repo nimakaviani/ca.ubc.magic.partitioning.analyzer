@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<distribution>
+	<modules partition-num="2">
+		<module name="osgi.cmpn" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-core" partition="1"/>
+		<module name="org.apache.felix.shell.tui" partition="1"/>
+		<module name="com.notehive.osgi.hibernate-samples.hibernate-classes" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-viewitem" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-putbid" partition="1"/>
+		<module name="org.ops4j.pax.logging.pax-logging-service" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-buynowauth" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-sellitemform" partition="1"/>
+		<module name="org.apache.felix.shell" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-registeritem" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-user-session" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-region-session" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-searchbycat" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-storebid" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-aboutme" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-viewuserinfo" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-storecomment" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-storebuynow" partition="1"/>
+		<module name="org.ops4j.pax.logging.pax-logging-api" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-browsereg" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-item-session" partition="1"/>
+		<module name="com.notehive.osgi.hibernate-samples.hibernate-session" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-bid-session" partition="2"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-buy-session" partition="2"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-categories-session" partition="2"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-putcommentauth" partition="2"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-viewbidhistory" partition="2"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-putcomment" partition="2"/>
+		<module name="com.springsource.com.mysql.jdbc" partition="1"/>
+		<module name="org.ops4j.pax.wicket.pax-wicket-service" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-buynow" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-putbidauth" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-registeruser" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-searchbyreg" partition="1"/>
+		<module name="org.apache.felix.bundlerepository" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-web-browsecat" partition="1"/>
+		<module name="org.ops4j.pax.web.service" partition="1"/>
+		<module name="com.notehive.osgi.rubis.hibernate-osgi-rubis-comment-session" partition="2"/>
+	</modules>	
+	<capabilities>
+		<hosts host-num="2">
+			<host id="1" default="true">
+				<cpu scale="GHz">1.7</cpu>
+				<memory scale="GB">4</memory>
+			</host>
+			<host id="2">
+				<cpu scale="GHz">2.1</cpu>
+				<memory scale="GB">2</memory>
+			</host>
+		</hosts>
+		
+		<exchange-rates>
+			<exchange-rate from-host="1" to-host="2" scale="GB">1.7</exchange-rate>
+			<exchange-rate from-host="2" to-host="1" scale="GB">2.1</exchange-rate>
+		</exchange-rates>
+	</capabilities>
+</distribution>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module-model>
+    <module-map>
+        <module name="">
+             <partition></partition>
+            <exec-cost></exec-cost>
+            <exec-count></exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+    </module-map>
+    
+    <exchange-map>
+        <interaction from="" to="">
+            <data-from-parent></data-from-parent>
+            <data-to-parent></data-to-parent>
+            <data-count></data-count>
+            <ignore-rates></ignore-rates>
+        </interaction>
+    </exchange-map>
+</module-model>

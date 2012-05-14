@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<capabilities>
+	<hosts host-num="2">
+		<host id="1" default="true">
+			<cpu>
+                <capability scale="GHz">1.7</capability>
+                <cost unit="3600" scale="second">100</cost>
+            </cpu>
+			<memory>
+                <capability scale="GB">4</capability>
+                <cost unit="1" scale="GB">0</cost>
+            </memory>
+		</host>
+		<host id="2">
+			<cpu>
+                <capability scale="GHz">3.4</capability>
+                <cost unit="3600" scale="second">20.0</cost>
+            </cpu>
+			<memory>
+                <capability scale="GB">2</capability>
+                <cost unit="1" scale="GB">0</cost>
+            </memory>
+		</host>
+	</hosts>
+	
+	<exchange-rates>
+		<exchange-rate from-host="1" to-host="2">                    
+            <capability scale="B">100</capability>
+            <latency scale="second">0</latency>
+            <cost unit="1" scale="GB">25000000.0</cost>
+        </exchange-rate>
+                
+		<exchange-rate from-host="2" to-host="1">
+            <capability scale="B">100</capability>
+            <latency scale="second">0.0</latency>
+            <cost unit="1" scale="GB">25</cost>
+        </exchange-rate>
+	</exchange-rates>
+</capabilities>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module-model name="11NodeG">
+    <module-map>
+        <module name="v0">
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v1">            
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v2">            
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v3">            
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+         <module name="v4">
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v5">            
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v6">            
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v7">            
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v8">
+            <partition>1</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v9">            
+            <partition>1</partition>
+            <exec-cost>5</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v10">            
+            <partition>1</partition>
+            <exec-cost>8</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v11">            
+            <partition>1</partition>
+            <exec-cost>12</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v12">            
+            <partition>1</partition>
+            <exec-cost>7</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <!--module name="v13">            
+            <partition>1</partition>
+            <exec-cost>7</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module-->
+
+
+        <module name="v0">
+            <partition>2</partition>
+            <exec-cost>10</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v1">            
+            <partition>2</partition>
+            <exec-cost>9</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v2">            
+            <partition>2</partition>
+            <exec-cost>9</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v3">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+         <module name="v4">
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v5">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v6">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v7">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v8">
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v9">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v10">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v11">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="v12">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <!--module name="v13">            
+            <partition>2</partition>
+            <exec-cost>-1</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module-->
+    </module-map>
+    
+    <exchange-map>
+        <interaction m1="v0" m2="v3">
+            <data-from-parent>9</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="v0" m2="v4">
+            <data-from-parent>4</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>    
+        <interaction m1="v0" m2="v1">
+            <data-from-parent>8</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="v1" m2="v4">
+            <data-from-parent>8</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+        <interaction m1="v1" m2="v5">
+            <data-from-parent>5</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+         <interaction m1="v1" m2="v2">
+            <data-from-parent>9</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>    
+        <interaction m1="v2" m2="v4">
+            <data-from-parent>2</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="v2" m2="v5">
+            <data-from-parent>6</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+        <interaction m1="v3" m2="v6">
+            <data-from-parent>8</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+         <interaction m1="v4" m2="v3">
+            <data-from-parent>1</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>    
+        <interaction m1="v4" m2="v6">
+            <data-from-parent>10</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="v4" m2="v7">
+            <data-from-parent>9</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+        <interaction m1="v4" m2="v8">
+            <data-from-parent>2</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+         <interaction m1="v5" m2="v4">
+            <data-from-parent>1</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>    
+        <interaction m1="v5" m2="v8">
+            <data-from-parent>7</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="v6" m2="v9">
+            <data-from-parent>10</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+        <interaction m1="v6" m2="v10">
+            <data-from-parent>3</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+         <interaction m1="v7" m2="v6">
+            <data-from-parent>1</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>    
+        <interaction m1="v7" m2="v9">
+            <data-from-parent>6</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="v7" m2="v10">
+            <data-from-parent>4</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+        <interaction m1="v7" m2="v11">
+            <data-from-parent>5</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+         <interaction m1="v8" m2="v7">
+            <data-from-parent>1</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>    
+        <interaction m1="v8" m2="v11">
+            <data-from-parent>3</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <!--interaction m1="v8" m2="v13">
+            <data-from-parent>9</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction-->   
+        <interaction m1="v9" m2="v10">
+            <data-from-parent>2</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+        <interaction m1="v11" m2="v12">
+            <data-from-parent>10</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+        <interaction m1="v10" m2="v11">
+            <data-from-parent>12</data-from-parent>
+            <data-to-parent>0</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+    </exchange-map>
+</module-model>

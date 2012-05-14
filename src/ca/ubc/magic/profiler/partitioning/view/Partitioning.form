@@ -1,0 +1,499 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JFileChooser" name="fileChooser">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="fileChooser" noResource="true"/>
+      </Properties>
+    </Component>
+    <Menu class="javax.swing.JMenuBar" name="commandMenuBar">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="commandMenuBar" noResource="true"/>
+      </Properties>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="fileMenu.text"/>
+            <Property name="font" type="java.awt.Font" resourceKey="fileMenu.font"/>
+            <Property name="name" type="java.lang.String" value="fileMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="exitItem">
+              <Properties>
+                <Property name="font" type="java.awt.Font" resourceKey="exitItem.font"/>
+                <Property name="text" type="java.lang.String" resourceKey="exitItem.text"/>
+                <Property name="name" type="java.lang.String" value="exitItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="partitioningMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="partitioningMenu.text"/>
+            <Property name="font" type="java.awt.Font" resourceKey="partitioningMenu.font"/>
+            <Property name="name" type="java.lang.String" value="partitioningMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="moduleCoarsenerMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="moduleCoarsenerMenu.text"/>
+                <Property name="font" type="java.awt.Font" resourceKey="moduleCoarsenerMenu.font"/>
+                <Property name="name" type="java.lang.String" value="moduleCoarsenerMenu" noResource="true"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="algorithmsMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="algorithmsMenu.text"/>
+                <Property name="font" type="java.awt.Font" resourceKey="algorithmsMenu.font"/>
+                <Property name="name" type="java.lang.String" value="algorithmsMenu" noResource="true"/>
+              </Properties>
+            </Menu>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="activateExposingMenu">
+              <Properties>
+                <Property name="font" type="java.awt.Font" resourceKey="activateExposingMenu.font"/>
+                <Property name="text" type="java.lang.String" resourceKey="activateExposingMenu.text"/>
+                <Property name="actionCommand" type="java.lang.String" resourceKey="activateExposingMenu.actionCommand"/>
+                <Property name="name" type="java.lang.String" value="activateExposingMenu" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="syntheticNodeMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="syntheticNodeMenu.text"/>
+                <Property name="name" type="java.lang.String" value="syntheticNodeMenu" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="bruteforceMenuItem">
+              <Properties>
+                <Property name="font" type="java.awt.Font" resourceKey="bruteforceMenuItem.font"/>
+                <Property name="text" type="java.lang.String" resourceKey="bruteforceMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="bruteforceMenuItem" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bruteforceMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="simulationMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="simulationMenu.text"/>
+            <Property name="font" type="java.awt.Font" resourceKey="simulationMenu.font"/>
+            <Property name="name" type="java.lang.String" value="simulationMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="loadTestFramework">
+              <Properties>
+                <Property name="font" type="java.awt.Font" resourceKey="loadTestFramework.font"/>
+                <Property name="text" type="java.lang.String" resourceKey="loadTestFramework.text"/>
+                <Property name="name" type="java.lang.String" value="loadTestFramework" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loadTestFrameworkActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="addForTest">
+              <Properties>
+                <Property name="font" type="java.awt.Font" resourceKey="addForTest.font"/>
+                <Property name="text" type="java.lang.String" resourceKey="addForTest.text"/>
+                <Property name="name" type="java.lang.String" value="addForTest" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addForTestActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="filterMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="filterMenu.text"/>
+            <Property name="font" type="java.awt.Font" resourceKey="filterMenu.font"/>
+            <Property name="name" type="java.lang.String" value="filterMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="moduleFilterMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="moduleFilterMenu.text"/>
+                <Property name="font" type="java.awt.Font" resourceKey="moduleFilterMenu.font"/>
+                <Property name="name" type="java.lang.String" value="moduleFilterMenu" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JCheckBoxMenuItem" name="hostPlacementFilterItem">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" resourceKey="hostPlacementFilterItem.font"/>
+                    <Property name="text" type="java.lang.String" resourceKey="hostPlacementFilterItem.text"/>
+                    <Property name="name" type="java.lang.String" value="hostPlacementFilterItem" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hostPlacementFilterItemActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JCheckBoxMenuItem" name="hostPlacementFilterItemThreaded">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" resourceKey="hostPlacementFilterItemThreaded.font"/>
+                    <Property name="text" type="java.lang.String" resourceKey="hostPlacementFilterItemThreaded.text"/>
+                    <Property name="name" type="java.lang.String" value="hostPlacementFilterItemThreaded" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hostPlacementFilterItemThreadedActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="interactionFilterMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="interactionFilterMenu.text"/>
+                <Property name="font" type="java.awt.Font" resourceKey="interactionFilterMenu.font"/>
+                <Property name="name" type="java.lang.String" value="interactionFilterMenu" noResource="true"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JCheckBoxMenuItem" name="moduleDependencyFilterItem">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" resourceKey="moduleDependencyFilterItem.font"/>
+                    <Property name="text" type="java.lang.String" resourceKey="moduleDependencyFilterItem.text"/>
+                    <Property name="name" type="java.lang.String" value="moduleDependencyFilterItem" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="moduleDependencyFilterItemActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JCheckBoxMenuItem" name="moduleDependencyFilterItemThreaded">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" resourceKey="moduleDependencyFilterItemThreaded.font"/>
+                    <Property name="text" type="java.lang.String" resourceKey="moduleDependencyFilterItemThreaded.text"/>
+                    <Property name="name" type="java.lang.String" value="moduleDependencyFilterItemThreaded" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="moduleDependencyFilterItemThreadedActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <MenuItem class="javax.swing.JMenuItem" name="editFilter">
+              <Properties>
+                <Property name="font" type="java.awt.Font" resourceKey="editFilter.font"/>
+                <Property name="text" type="java.lang.String" resourceKey="editFilter.text"/>
+                <Property name="name" type="java.lang.String" value="editFilter" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="editFilterActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="costModelMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="costModelMenu.text"/>
+            <Property name="font" type="java.awt.Font" resourceKey="costModelMenu.font"/>
+            <Property name="name" type="java.lang.String" value="costModelMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <Menu class="javax.swing.JMenu" name="executionModelMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="executionModelMenu.text"/>
+                <Property name="font" type="java.awt.Font" resourceKey="executionModelMenu.font"/>
+                <Property name="name" type="java.lang.String" value="executionModelMenu" noResource="true"/>
+              </Properties>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="interactionModelMenu">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="interactionModelMenu.text"/>
+                <Property name="font" type="java.awt.Font" resourceKey="interactionModelMenu.font"/>
+                <Property name="name" type="java.lang.String" value="interactionModelMenu" noResource="true"/>
+              </Properties>
+            </Menu>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="name" type="java.lang.String" value="Graph Partitioning" noResource="true"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="commandMenuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-106,0,0,3,59"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Container class="javax.swing.JDesktopPane" name="desktopPane">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder>
+              <Property name="highlight" resourceKey="desktopPane.border.highlightColor"/>
+              <Property name="shadow" resourceKey="desktopPane.border.shadowColor"/>
+            </EtchetBorder>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="desktopPane" noResource="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 300]"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout"/>
+    </Container>
+    <Container class="javax.swing.JPanel" name="commandPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="commandPanel" noResource="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[850, 210]"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="First"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="visualizeBtn" min="-2" pref="154" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="moduleModelCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="statusMessageLabel" pref="503" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="testBtn" min="-2" pref="104" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="loadTestFrameworkBtn" min="-2" max="-2" attributes="1"/>
+                              </Group>
+                              <Component id="partitioningAlgCombo" min="-2" pref="288" max="-2" attributes="1"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="profileXmlLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="hostXmlLabel" alignment="0" min="-2" max="-2" attributes="1"/>
+                              <Component id="constraintXMLLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="hostXmlPath" pref="571" max="32767" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="hostXmlOpen" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="constraintXMLPath" alignment="0" pref="571" max="32767" attributes="1"/>
+                                      <Component id="profileXmlPath" alignment="1" pref="571" max="32767" attributes="1"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="constraintXMLOpen" min="-2" max="-2" attributes="1"/>
+                                      <Component id="profileXmlOpen" alignment="0" min="-2" max="-2" attributes="1"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="55" pref="55" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="profileXmlLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="profileXmlOpen" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="profileXmlPath" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="constraintXMLLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="constraintXMLPath" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="constraintXMLOpen" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="hostXmlLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hostXmlOpen" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="hostXmlPath" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="visualizeBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="partitioningAlgCombo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="moduleModelCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="statusMessageLabel" max="32767" attributes="1"/>
+                      <Component id="loadTestFrameworkBtn" alignment="0" max="32767" attributes="1"/>
+                      <Component id="testBtn" alignment="0" min="-2" max="-2" attributes="1"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="profileXmlLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="profileXmlLabel.text"/>
+            <Property name="name" type="java.lang.String" value="profileXmlLabel" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="hostXmlLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="hostXmlLabel.text"/>
+            <Property name="name" type="java.lang.String" value="hostXmlLabel" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="profileXmlPath">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[10, 28]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="profileXmlPath" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="hostXmlPath">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[10, 28]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="hostXmlPath" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="profileXmlOpen">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="profileXmlOpen.text"/>
+            <Property name="name" type="java.lang.String" value="profileXmlOpen" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="profileXmlOpenActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="statusMessageLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" resourceKey="statusMessageLabel.foreground"/>
+            <Property name="text" type="java.lang.String" resourceKey="statusMessageLabel.text"/>
+            <Property name="name" type="java.lang.String" value="statusMessageLabel" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="partitioningAlgCombo">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="0"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="partitioningAlgCombo" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="partitioningAlgComboActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="visualizeBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="visualizeBtn.text"/>
+            <Property name="name" type="java.lang.String" value="visualizeBtn" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="visualizeBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="hostXmlOpen">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="hostXmlOpen.text"/>
+            <Property name="name" type="java.lang.String" value="hostXmlOpen" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hostXmlOpenActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="moduleModelCheckBox">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="moduleModelCheckBox.text"/>
+            <Property name="name" type="java.lang.String" value="moduleModelCheckBox" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="loadTestFrameworkBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="loadTestFrameworkBtn.text"/>
+            <Property name="name" type="java.lang.String" value="loadTestFrameworkBtn" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loadTestFrameworkBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="testBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="testBtn.text"/>
+            <Property name="name" type="java.lang.String" value="testBtn" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="testBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="constraintXMLLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="constraintXMLLabel.text"/>
+            <Property name="name" type="java.lang.String" value="constraintXMLLabel" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="constraintXMLPath">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[10, 28]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="constraintXMLPath" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="constraintXMLOpen">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="constraintXMLOpen.text"/>
+            <Property name="name" type="java.lang.String" value="constraintXMLOpen" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="constraintXMLOpenActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

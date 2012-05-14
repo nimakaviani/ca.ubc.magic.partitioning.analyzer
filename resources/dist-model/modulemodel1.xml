@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module-model name="3NodeG">
+    <module-map>
+        <module name="a">
+            <partition>1</partition>
+            <exec-cost>12</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="b">            
+            <partition>1</partition>
+            <exec-cost>14</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="c">            
+            <partition>1</partition>
+            <exec-cost>9</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        
+         <module name="a">
+            <partition>2</partition>
+            <exec-cost>10</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="b">            
+            <partition>2</partition>
+            <exec-cost>100</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+        <module name="c">            
+            <partition>2</partition>
+            <exec-cost>7</exec-cost>
+            <exec-count>1</exec-count>
+            <ignore-rates>true</ignore-rates>
+        </module>
+    </module-map>
+    
+    <exchange-map>
+        <interaction m1="a" m2="b">
+            <data-from-parent>20</data-from-parent>
+            <data-to-parent>20</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="a" m2="c">
+            <data-from-parent>3</data-from-parent>
+            <data-to-parent>3</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>      
+        <interaction m1="b" m2="c">
+            <data-from-parent>11</data-from-parent>
+            <data-to-parent>11</data-to-parent>
+            <data-count>1</data-count>
+            <ignore-rates>true</ignore-rates>
+        </interaction>       
+    </exchange-map>
+</module-model>

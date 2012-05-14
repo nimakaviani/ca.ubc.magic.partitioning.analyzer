@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<constraints>
+    <entity>
+        <component>org.apache.aries.samples.ariestrader.beans</component>
+        <class>\p{Alnum}*</class>
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>org.apache.aries.samples.ariestrader.core</component>
+        <class>\p{Print}*</class>
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity>    
+    <entity>
+        <component>org.apache.aries.samples.ariestrader.persist.jdbc</component>
+        <class>\p{Alnum}*</class>
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>org.apache.aries.samples.ariestrader.api</component>
+        <class>\p{Alnum}*</class>
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity>
+    <entity>
+        <component>org.apache.aries.sample.ariestrader.web</component>
+        <class>\p{Print}*</class>
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity>
+   <!-- <entity>
+        <component>org.apache.aries.samples.ariestrader.util</component>
+        <class>\p{Alnum}*</class>
+        <method>m</method>
+        <exposes>class</exposes>
+    </entity> -->
+
+    <!-- The following are exposers for action methods -->
+    <entity>
+        <component>org.apache.aries.sample.ariestrader.web</component>
+        <class>TradeServletAction</class>
+        <method>\p{Alnum}*</method>        
+        <exposes>method</exposes>
+    </entity>
+</constraints>
